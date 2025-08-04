@@ -97,7 +97,7 @@
       @include grids(3, 1fr, 40px);
     }
     .cards {
-      @include cards(30px, $lightblue, $hover: false);
+      @include cards(15px, $lightblue, $hover: false);
       text-align: center;
 
       i {

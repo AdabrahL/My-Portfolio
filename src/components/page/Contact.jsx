@@ -1,33 +1,19 @@
 import React from "react";
+import { Footer } from "../Footer/Footer";
 
 export const Contact = () => {
   return (
+    <>
     <div className="pages">
       <style>{`
-        .pages {
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          padding: 2rem;
-          background-color: #0f172a;
-          min-height: 100vh;
-          box-sizing: border-box;
-        }
+        
 
-        .content-container {
-          background-color: #1e293b;
-          color: #f8fafc;
-          padding: 2rem;
-          border-radius: 10px;
-          max-width: 800px;
-          width: 100%;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        }
+        
 
         .contact-title {
           font-size: 24px;
           margin-bottom: 1.5rem;
-          color: #fbbf24;
+          color:#00bfff;
         }
 
         .contact-info {
@@ -102,6 +88,9 @@ export const Contact = () => {
           <button type="submit">Send Message</button>
         </form>
       </div>
+     
     </div>
+     <Footer/>
+     </>
   );
 };

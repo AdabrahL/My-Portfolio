@@ -1,23 +1,30 @@
 header {
   @include shadow;
   display: flex;
-  @include flex(space-between, none, center);
+  justify-content: center;  // Center the content horizontally
+  align-items: center;      // Center vertically
   background-color: $black;
+  padding: 20px 0;          // Top/bottom padding only
 
   ul {
-    width: $w-4xl;
     display: flex;
     align-items: center;
-    padding: 30px;
+    justify-content: center;
+    gap: 100px;              // Space between list items
+    padding: 0 30px;
+    list-style: none;
+
     li {
-      margin-right: $s;
       position: relative;
+
       a {
         text-transform: capitalize;
         font-size: 15px;
         font-weight: 500;
         @include zindex;
+        color: white;
       }
+
       span {
         color: $indigo;
         @include absolute;
@@ -25,14 +32,6 @@ header {
         top: -20px;
         opacity: 0.3;
       }
-    }
-  }
-  .icons {
-    width: $s;
-    background: $lightdark;
-    @include flex(center, none, none);
-    button {
-      font-size: 50px;
     }
   }
 }

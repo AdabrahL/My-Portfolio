@@ -8,7 +8,7 @@ import { Bio } from "./Bio"
 import { Info } from "./Info"
 import { Price } from "./Price"
 import { Services } from "./Services"
-import { Slider } from "./Slider"
+
 
 export const About = () => {
   useEffect(() => {
@@ -20,6 +20,7 @@ export const About = () => {
   }, [])
 
   return (
+    <>
     <section className='pages'>
       <div className='content-container'>
         {about.map((items, index) => (
@@ -39,10 +40,7 @@ export const About = () => {
               <Services items={items} Heading={Heading} />
             </div>
 
-            {/* Slider Section */}
-            <div data-aos="fade-up" data-aos-delay="100">
-              <Slider items={items} Heading={Heading} />
-            </div>
+           
 
             {/* Pricing Section */}
             <div data-aos="fade-up" data-aos-delay="200">
@@ -52,5 +50,8 @@ export const About = () => {
         ))}
       </div>
     </section>
+    
+    </>
   )
+
 }

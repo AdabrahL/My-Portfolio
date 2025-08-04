@@ -1,7 +1,8 @@
 import React from "react";
-
+import { Footer } from "../Footer/Footer";
 export const Portfolio = () => {
   return (
+    <>
     <div className="pages">
     <div className="content-container">
       <style>{`
@@ -69,7 +70,7 @@ export const Portfolio = () => {
             contact information.
           </p>
           <a
-            href="https://github.com/yourusername/portfolio"
+            href="https://github.com/AdabrahL/My-Portfolio.git"
             target="_blank"
             rel="noopener noreferrer"
             className="project-link"
@@ -80,13 +81,13 @@ export const Portfolio = () => {
 
         {/* Project 2 */}
         <div className="project-card">
-          <h3 className="project-title">To-Do App</h3>
+          <h3 className="project-title">Fake-API Store</h3>
           <p className="project-desc">
             A simple task manager web app using HTML, CSS, and JavaScript. Users can add, delete, and
             mark tasks as complete.
           </p>
           <a
-            href="https://github.com/yourusername/todo-app"
+            href="https://github.com/AdabrahL/React-FakeAPI-Store.git"
             target="_blank"
             rel="noopener noreferrer"
             className="project-link"
@@ -97,13 +98,13 @@ export const Portfolio = () => {
 
         {/* Project 3 */}
         <div className="project-card">
-          <h3 className="project-title">Weather App</h3>
+          <h3 className="project-title">Real Estate Website Clone</h3>
           <p className="project-desc">
             A mobile-first weather app using React Native and OpenWeatherMap API to display
             temperature, humidity, and city name.
           </p>
           <a
-            href="https://github.com/yourusername/weather-app"
+            href="https://github.com/AdabrahL/Estate-Masters-Web.git"
             target="_blank"
             rel="noopener noreferrer"
             className="project-link"
@@ -112,9 +113,26 @@ export const Portfolio = () => {
           </a>
         </div>
 
-        {/* Add more projects here */}
+        {/* Project 4 */}
+        <div className="project-card">
+          <h3 className="project-title">Receipt-Generator</h3>
+          <p className="project-desc">
+            A mobile-first weather app using React Native and OpenWeatherMap API to display
+            temperature, humidity, and city name.
+          </p>
+          <a
+            href="https://github.com/AdabrahL/Receipt-Generator.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            View on GitHub
+          </a>
+        </div>
       </div>
     </div>
     </div>
+    <Footer/>
+    </>
   );
 };

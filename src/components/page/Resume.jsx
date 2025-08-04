@@ -1,51 +1,11 @@
 import React from "react";
-
+import { Footer } from "../Footer/Footer";
 export const Resume = () => {
   return (
-    <div className="pages">
+    <>
+    <div className="resume-wrapper">
       <style>{`
-       .pages {
-          
-          min-height: 120vh;
-          padding: 2rem 0;
-          display: flex;
-          justify-content: center;
-        }
-      
-    
-        .resume-title {
-          font-size: 28px;
-          margin-bottom: 0.5rem;
-          color:#00bfff;
-        }
-
-        .resume-name {
-          font-size: 18px;
-          margin-bottom: 1rem;
-          color:White;
-        }
-
-        .resume-section {
-        color:White;
-          margin-bottom: 1.2rem;
-        }
-
-        .resume-section h5 {
-          margin-bottom: 0.3rem;
-          font-size: 16px;
-          color:gray;
-        }
-
-        .resume-section p,
-        .resume-section ul {
-          margin: 0;
-          padding: 0;
-        }
-
-        .resume-section ul {
-          padding-left: 1.2rem;
-          list-style-type: disc;
-        }
+        
       `}</style>
 
       <div className="content-container">
@@ -65,7 +25,7 @@ export const Resume = () => {
           <h5>Education</h5>
           <p>
             <strong>WASSCE Certificate</strong><br />
-            [Your School Name], [Location] <br />
+            [Your School Name], [Location]<br />
             Year Completed: [Insert Year]
           </p>
         </section>
@@ -105,15 +65,8 @@ export const Resume = () => {
             and continue growing with mentorship and hands-on experience.
           </p>
         </section>
-
-         <section className="resume-section">
-          <h5>Career Objective</h5>
-          <p>
-            To become a well-rounded software developer, contribute to real-world projects,
-            and continue growing with mentorship and hands-on experience.
-          </p>
-        </section>
       </div>
     </div>
-  );
+    <Footer/>
+</>  );
 };

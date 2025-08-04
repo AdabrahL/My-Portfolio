@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { blogPosts } from "../../data/data";
-
+import { Footer } from "../Footer/Footer";
 export const Blog = () => {
   // State: all posts start as the imported blogPosts
   const [posts, setPosts] = useState(blogPosts);
@@ -56,31 +56,16 @@ export const Blog = () => {
   }, {});
 
   return (
+    <>
     <div className="pages">
       <style>{`
-        .pages {
-          min-height: 100vh;
-          display: flex;
-          justify-content: center;
-          padding: 2rem;
-          box-sizing: border-box;
-          background: #0f172a;
-        }
-
-        .content-container {
-          max-width: 1000px;
-          width: 100%;
-          padding: 2rem;
-          background-color: #111;
-          border-radius: 10px;
-          color: #fff;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        }
+        
+        
 
         .blog-header {
           font-size: 2rem;
           margin-bottom: 2rem;
-          color: #fbbf24;
+          color:#00bfff;
           text-align: center;
         }
 
@@ -219,5 +204,7 @@ export const Blog = () => {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };

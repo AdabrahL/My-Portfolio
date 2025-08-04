@@ -4,7 +4,7 @@ import { BiLockOpen } from "react-icons/bi"
 export const Price = ({ items, Heading }) => {
   return (
     <>
-      <div className='about_price'>
+      <div className='about_price' style={{paddingTop:'30px'}}>
         <Heading title='Fair Price' />
         <div className='about_price_content'>
           {items.price.map((val) => (
